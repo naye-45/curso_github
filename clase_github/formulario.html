@@ -3,58 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
+    <title>Formulario de Registro Moderno</title>
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
         body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
         }
 
         .formulario{
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            width: 350px;
+            width: 400px;
+            padding: 35px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         h2{
             text-align: center;
-            margin-bottom: 20px;
+            color: white;
+            margin-bottom: 25px;
+            font-size: 30px;
         }
 
         label{
             display: block;
-            margin-top: 10px;
-            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: white;
+            font-weight: 500;
         }
 
-        input, select{
+        input,
+        select{
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            background: rgba(255,255,255,0.9);
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus{
+            outline: none;
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(255,255,255,0.6);
         }
 
         button{
             width: 100%;
-            padding: 10px;
-            margin-top: 15px;
-            background-color: #007BFF;
-            color: white;
+            padding: 14px;
+            margin-top: 25px;
             border: none;
-            border-radius: 5px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
+            transition: 0.3s;
         }
 
         button:hover{
-            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,114,255,0.5);
+        }
+
+        button:active{
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -64,27 +94,27 @@
         <h2>Formulario de Registro</h2>
 
         <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
 
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" min="1" required>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="1" placeholder="Ingrese su edad" required>
 
-            <label for="genero">Género:</label>
+            <label for="genero">Género</label>
             <select id="genero" name="genero">
-                <option value="">Seleccione</option>
+                <option value="">Seleccione una opción</option>
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
                 <option value="otro">Otro</option>
             </select>
 
-            <button type="submit">Registrar</button>
+            <button type="submit">Registrarse</button>
         </form>
     </div>
 
