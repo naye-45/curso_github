@@ -83,3 +83,7 @@ Por ejemplo:
 ## Conclusión
 
 Los **Issues** permiten registrar tareas, errores o mejoras específicas, mientras que los **Projects** ayudan a organizar y gestionar esas tareas dentro de un proyecto de desarrollo. Juntos facilitan la planificación, el seguimiento y la colaboración en equipos de trabajo.
+
+## Resultado 
+
+![alt text](image-1.png)
